@@ -18,6 +18,7 @@
 - has_many :comments
 - has_many :purchase_managements
 
+
 ## comments テーブル
 
 | Column | Type   | Options     |
@@ -48,6 +49,7 @@
 - has_many :comments
 - belongs_to :user
 - has_one :purchase_management
+- 
 
 ## purchase_managements テーブル
 
@@ -57,11 +59,10 @@
 | item_id | string | null: false |
 
 ### Association
-
 - has_one :user
 
-## deliveries テーブル
 
+## deliveries テーブル
 | Column                 | Type    | Options     |
 | -----------------------| ------- | ----------- |
 | post_code              | string  | null: false |
