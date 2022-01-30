@@ -41,3 +41,5 @@
 
 - has_many :comments
 - belongs_to :user
+
+差分確認
