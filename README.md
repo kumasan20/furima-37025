@@ -48,5 +48,31 @@
 
 - has_many :comments
 - belongs_to :user
+- has_one :purchase_management
+- 
 
-差分確認
+## purchase_managements テーブル
+
+| Column  | Type   | Options     |
+| ------- | ------ | ----------- |
+| user_id | string | null: false |
+| item_id | string | null: false |
+
+### Association
+- has_one :user
+
+
+## deliveries テーブル
+| Column                 | Type    | Options     |
+| -----------------------| ------- | ----------- |
+| post_code              | string  | null: false |
+| prefectures            | string  | null: false |
+| municipalities         | string  | null: false |
+| house_number           | string  | null: false |
+| building_name          | string  | null: false |
+| telephone_number       | string  | null: false |
+| purchase_management_id | string  | null: false |
+
+### Association
+
+- has_one :item
